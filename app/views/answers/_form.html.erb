@@ -1,0 +1,9 @@
+<%= form_for [ @question, @answer ] do |f| %>
+
+  <p>
+    <label>comment</label>
+    <%= f.text_area :comment%>
+  </p>
+  <%= f.submit %>
+<% end %>
+

@@ -1,0 +1,15 @@
+
+<div style="float:left;font-size: 20pt; font-family: verdana;line-height: 30px;"><%= link_to "Home", root_path %></div>
+<div class="subnav" style=" font-size: 20pt; font-family: verdana; line-height: 30px;">
+
+  
+  <% if member_signed_in? %>
+     <div class="page-header" style="padding-left:700px;">  Signed in as <%= current_member.email %>
+     <%= link_to "Sign out",destroy_member_session_path,:method => :delete %>
+  <% else %>
+    <div class="page-header" style="padding-left:1000px;">  <%= link_to "Sign up",new_member_registration_path %> or <%= link_to "Sign in", new_member_session_path %></div> 
+   <% end %>
+</div>
+      
+      
+      

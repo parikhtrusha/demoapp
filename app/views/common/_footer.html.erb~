@@ -1,0 +1,4 @@
+<div class="modal-footer">
+<%= link_to "Contact US", root_path %>
+
+</div>

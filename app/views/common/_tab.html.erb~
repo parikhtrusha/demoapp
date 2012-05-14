@@ -1,0 +1,7 @@
+<div class="page-header" style="text-align:center;">
+<div class="btn btn-primary btn-large">Ruby on Rials</div>
+<div class="btn btn-success btn-large">PHP</div>
+<div class="btn btn-warning btn-large">C/C++</div>
+<div class="btn btn-danger btn-large">.NET</div>
+<div class="btn btn-inverse btn-large">ANDROID</div>
+</div>
