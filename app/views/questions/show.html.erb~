@@ -1,0 +1,12 @@
+
+
+<p>
+  <b>Question:</b>
+  <%= @question.name %>
+  </p>
+
+
+
+
+
+<%= link_to 'Back', questions_path %>
