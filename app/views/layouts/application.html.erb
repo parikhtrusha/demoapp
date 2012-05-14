@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render :partial=>'common/header' %>
 <%= yield %>
-
+<div class="modal-footer" style="margin-bottom:20px;">
+<%= render :partial=>'common/footer' %>
+</div>
 </body>
 </html>
