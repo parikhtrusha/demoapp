@@ -1,0 +1,34 @@
+<% if current_member %>
+<%= render :partial=>'common/tab' %>
+<h1>Listing users</h1>
+
+</div>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>
+<% else %>
+<br><br><br><br><br><br>
+
+<h2 ><div class="alert alert-success" style="text-align: center;padding-top:100px;padding-bottom:100px;padding-left:150px;font-size:30pt;">WELCOME TO STACK OVERFLOW<div></h2>
+<br><br><br><br><br><br>
+<% end %>
